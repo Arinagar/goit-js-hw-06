@@ -6,6 +6,7 @@ function submit(event) {
 
   if (!this.elements.email.value || !this.elements.password.value) {
     alert('All field must be fullfiled');
+    return;
   }
 
   userData.email = this.elements.email.value;
